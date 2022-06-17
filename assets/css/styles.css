@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.hero {
+height: 100px;
+display: flex;
+background-color: black;
+color: antiquewhite;
+}
+
+.header {
+background-color: aliceblue;
+display: inline-block;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navigation {
+    float:right
+}
+
+.navigation nav ul{
+    list-style-type:none;
+}
+
+.navigation nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.project1 {
+size: 25%;
+background-color: aqua;
+}
+
+.project2 {
+size: 35%;
+background-color: aqua;
+}
+
+.project3 {
+size: 25%;
+background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
+  }
+
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    header {
+      background: #772014;
+    }
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  }
