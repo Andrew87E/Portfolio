@@ -1,48 +1,154 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-
+  box-sizing: border-box;
+  margin: 0;
 }
+
+/* all a tags */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gruppo&family=Orbitron&family=Source+Code+Pro&display=swap');
+
+/* custom font */
+@font-face {
+  font-family: drew;
+  src: url(../font/Baunk.ttf) format("truetype");
+  src: url(../font/Baunk.otf) format("opentype");
+  src: url(../font/Baunk.woff) format("woff")
+}
+
+/* title */
+.header h1 {
+  font-family: source code pro, monospace;
+}
+
 .hero {
-height: 100px;
-display: flex;
-background-color: black;
-color: antiquewhite;
+  height: 500px;
+  display: flex;
+  width: 100%;
 }
 
 .header {
-background-color: aliceblue;
-display: inline-block;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  background: #5c5c5c; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #5c5c5c 0%, #080808 46%, #010101 50%, #060606 53%, #303030 76%, #232323 87%, #111111 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #5c5c5c 0%,#080808 46%,#010101 50%,#060606 53%,#303030 76%,#232323 87%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #5c5c5c 0%,#080808 46%,#010101 50%,#060606 53%,#303030 76%,#232323 87%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#111111',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 200 px;
+  border: 1px dashed;
+  font-size: 26px;
+  color: #a8ff36;
+  width: 100%;
 }
 
-.navigation {
-    float:right
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 26px;
+  color: #a8ff36;
+  justify-content: flex-end;
 }
 
-.navigation nav ul{
-    list-style-type:none;
+
+ .header a {
+  color: #a8ff36;
 }
 
-.navigation nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+.header nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+} 
+
+.card{
+  margin: 20px;
+  padding: 20px;
+  border: 10px;
+  border-color: bisque;
+  border-style: ridge;
+  flex-wrap: wrap;
 }
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  /* edit this gradient: https://colorzilla.com/gradient-editor/#5c5c5c+0,080808+46,010101+50,060606+53,303030+76,232323+87,111111+100 */
+  background: #5c5c5c; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #5c5c5c 0%, #080808 46%, #010101 50%, #060606 53%, #303030 76%, #232323 87%, #111111 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  #5c5c5c 0%,#080808 46%,#010101 50%,#060606 53%,#303030 76%,#232323 87%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  #5c5c5c 0%,#080808 46%,#010101 50%,#060606 53%,#303030 76%,#232323 87%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#111111',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
 .project1 {
-size: 25%;
-background-color: aqua;
+  height: 200px;
+  padding: 20px;
+  width: 90%;
+  background-color: aqua;
+  flex: 1 1 400;
 }
 
 .project2 {
-size: 35%;
-background-color: aqua;
+  padding: 20px;
+  height: 200px;
+  width: fit-content;
+  background-color: aqua;
+  background-position-x: left;
+  flex: 2 1 400;
+  float: inline-start;
 }
 
-.project3 {
-size: 25%;
-background-color: aqua;
+.contact-form {
+  padding: 40px;
+  padding-top: 200px;
+  width: 200px;
+  height: fit-content;
+  border:black;
+  border-width: 10px;
 }
 
+.input-name {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 20px;
+justify-content: left;
+}
+
+.input-email {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+
+}
+
+.input-subject {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+
+}
+
+.input-message {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 60px;
+  justify-content: left;
+
+}
 
 
 
@@ -70,27 +176,8 @@ background-color: aqua;
 
 
 @media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
-    }
-    /* Change the header color */
-    header {
-      background: #772014;
-    }
-  }
-
+}
 
 
 @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-    header {
-      background: #772014;
-    }
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  }
+}
