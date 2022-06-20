@@ -1,33 +1,6 @@
-@media screen and (max-width: 1199px) {
-    .pro3{
-    width: 43%;
-    }
-    .project2{
-      width: 43%;
-    }
-    .pro4{
-      width: 90%;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-  .project2 {
-    width: 90%;
-  }
-  
-  .pro3{
-    width: 43%;
-  }
-  .pro4{
-  width: 43%; 
-  justify-content: flex-end;
-  }
-  
-  @media screen and (max-width: 768px) {
 
-  }
-  
-  @media screen and (max-width: 635px) {
+/* at a width of 768px or lower hamburger menu appears and cards become stacked */
+  @media screen and (max-width: 768px) {
   .card {
     width: 90%;
   }
@@ -50,4 +23,3 @@
     text-align: left;
   }
 }
-  
