@@ -16,124 +16,126 @@
 
 <body>
     <header>
-        <nav class="navbar" id="myNavbar"> 
+        <nav class="navbar" id="myNavbar" title="Navigation Bar"> 
             <h1 class="title">Andrew</h1>
                 <a href="#" class="active">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Github</a>
-                <a href="#">About Me</a>
-                <a href="#">Contact Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#github">Github</a>
+                <a href="#contact-me">About Me</a>
+                <a href="#contact-me">Contact Me</a>
                 <a href="javascript:void(0);" class="icon" onclick="hambagurger()">
                     <i class="fa fa-bars"></i>
                 </a>       
         </nav>
     </header>
 
-    <div class="hero">
+    <div class="hero" title="Pretty Picture">
         <section id="intro">
             <h2>
-                Hi, I'm Andrew! I'm learning web development right now!
-                Check back later for some cool things I've made!
+                Portfolio
             </h2>
         </section>
     </div>
 
-<main id="projects">
+<main class="card-holder" title="My Projects">
+    
+    
+<a href="github.com/andrew87e">
     <aside class="side float-left">
-        <h3>Check out some of my work!</h3>
-
-
+            <section>
+                    <h3>My Github</h3>
+            </section>
     </aside>
+</a>
 
-        <section class="card-holder float-right">
-            <article class="project1 card">
+        <section id="projects" class="float-right">
+            <a href="google.com" class="project1 card">
+                <article title="Project 1">
                     <h2 class="card-header">
                         Placeholder project 1
                     </h2>
-            </article>
+                </article>
+            </a>
 
-            <article class="pro2 card">
+            <a href="google.com" class="pro2 card">
+                <article title="Project 2">
                     <h2 class="card-header">
                         Placeholder project 2
                     </h2>
-            </article>
+                </article>
+            </a>
             
-            <article class="pro3 card">
+            <a href="google.com" class="pro3 card">
+                <article title="Project 3">
                     <h2 class="card-header">
                         Placeholder project 3
                     </h2>
-            </article>
-            <article class="pro4 card">
+                </article>
+            </a>
+            
+            <a href="google.com" class="pro4 card">
+            <article title="Project 4">
                 <h2 class="card-header">
                     Placeholder project 4
                 </h2>
-        </section>
-
-    </section>
-        </main>
+            </article>
+            </a>
+        
+            </section>
+    
+    
+    
+    </main>
 <br>
+    <article id="about-me" title="About Me">
+        <h3>I Gotta Put Stuffs Here</h3>
+    </article>
 
 
-    <div class="contact-form">
-        <form id="contact-me">
-            <ul>
-                <li>
-                    <input class="input-name" placeholder="Name" type="text">
-                </li>
-                <li>
-                    <input class="input-email" placeholder="Email" type="text">
-                </li>
-                <li>
-                    <input class="input-subject" placeholder="Subject" type="text">
-                </li>
-                <li>
-                    <input class="input-message" placeholder="Message" type="text"vvvv>
-                </li>
-            </ul>
-        </form>
 
+<footer class="container" id="contact-me" title="Contact Me">
+    <div class="innerwrap">
+    
+        <section class="contact-title bckfix">
+            <div class="textcenter">
+                <span class="title">Contact Me!</span><br>
+                <span class="seperator"></span>
+                <h1>Drop Me a Line</h1>
+            </div>
+        </section>
+    
+        <section class="section2 bckfix">
+            <div class="col2 column1 first">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Richmond,%20Tx&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div class="col2 column2 last">
+                <div class="sec2innercont">
+            </div>
+                <div class="sec2contactform">
+                    <h3 class="sec2frmtitle">Want to Know More? Drop Me a Line</h3>
+                    <form action="">
+                        <div class="bckfix">
+                            <input class="col2 first" type="text" placeholder="First Name">
+                            <input class="col2 last" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="bckfix">
+                            <input  class="col2 first" type="Email" placeholder="Email">
+                            <input class="col2 last" type="text" placeholder="Contact Number">
+                        </div>
+                        <div class="bckfix">
+                            <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                        </div>
+                        <div class="bckfix"><input type="submit" value="Send"></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    
     </div>
-
-
-        <footer>
-
-        </footer>
-
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</footer>
 
 
 
